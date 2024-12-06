@@ -105,4 +105,11 @@ if __name__ == '__main__':
 
 
 
- 
+@app.route('/login/profile')
+def profile():
+    if 'loggedin' in session:
+        cursor = mydb.cursor(dictionary=True)
+        cursor.execute('SELECT * FROM accounts WHERE id = %s', (session['id'],))
+        account = cursor.fetchone()
+        return render_template('profile.html', account=account)
+    return redirect(url_for('login'))
