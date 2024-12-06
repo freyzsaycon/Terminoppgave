@@ -1,0 +1,824 @@
+body {
+margin: 0%;
+overflow-x: hidden;
+background-color: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(26,255,0,1) 150%); ;
+}
+
+
+/* loader start */
+.loading {
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+z-index: 10000;
+background-color: black;
+overflow: hidden;
+pointer-events: none;
+opacity: 1;
+
+}
+
+.loading { animation: fadeIn 5s;}
+
+@keyframes fadeIn {
+  100% {opacity: 0;}
+  0% {opacity: 1;}
+}
+
+.loadinggear {
+width: 216px;
+height: 216px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin: -108px 0 0 -108px;
+}
+
+.loading:active{
+opacity: 0;
+}
+/* loader end */
+
+/* navbar start */
+
+.navbar {
+display: flex;
+justify-content: center;
+background-color: black;
+padding: 20px;
+gap: 10%;
+border-radius: 0px 0px 75px 75px;
+box-shadow:  3px 3px 3px #1AFF00 ;
+}
+
+#navtext:hover {
+transform: translateY(5px);
+}
+
+#navtext {
+color: #1AFF00;
+font-family: 'Segoe UI';
+font-size: 32px;
+font-weight: 1;
+text-decoration: none;
+}
+
+#logo:hover {
+transform: translateY(5px);
+}
+
+#logo {
+height: 50px;
+}
+
+#icons:hover {
+    transform: translateY(5px);
+}
+
+#icons {
+height: 60px;
+}
+
+.dropmenu {
+background-color: black;
+border-style: solid;
+}
+
+.menu {
+position: relative;
+display: inline-block;
+}
+
+.dropmenubuttons {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropmenubuttons a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Segoe UI;
+    font-weight: bold;
+  }
+
+  .dropmenubuttons a:hover {background-color: #ddd;}
+
+.menu:hover .dropmenubuttons {display: block;}
+
+.search {
+    background-color: black;
+    border-style: solid;
+}
+
+.form-control, .searchbutton {
+    animation: slide 1s 1;
+  }
+  
+  .searchbutton {
+    display: none;
+    border-radius: 25px;
+    padding: 5px;
+  }
+
+.searchfull {
+display: flex;
+}
+
+/* navbar end */
+
+/* titles start*/
+
+.pagetitle {
+color: #707070;
+font-family: 'Segoe UI';
+font-weight: bold;
+font-size: 17px;
+padding: 20px;
+}
+
+.title {
+display: flex;
+justify-content: center;
+font-family: 'Segoe UI';
+font-weight: bold;
+font-size: 40px;
+}
+
+.titlekontakt {
+display: flex;
+justify-content: center;
+font-family: 'Segoe UI';
+font-weight: bold;
+font-size: 40px;
+color: #1AFF00;
+background-color: black;
+padding: 20px;
+margin-right: 30%;
+margin-left: 30%;
+border-radius: 50px;
+margin-top: 2%;
+}
+
+.titleproducts {
+    display: flex;
+    justify-content: right;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 40px;
+    color: #707070;
+    margin-right: 18%;
+    margin-top: 1%;
+
+}
+
+/* titles end*/
+
+
+/* Home page content */
+
+
+#xboxcontroller {
+border: solid 2px;
+padding: 35px;
+color: #707070;
+box-sizing: border-box;
+width: 18rem;
+height: 240px;
+}
+
+#ps5controller {
+    border: solid 2px;
+    padding: 35px;
+    color: #707070;
+    box-sizing: border-box;
+    width: 18rem;
+    height: 240px;
+}
+
+#ps4controller {
+    border: solid 2px;
+    padding: 35px;
+    color: #707070;
+    box-sizing: border-box;
+    width: 18rem;
+    height: 240px;
+
+}
+
+.productinfo {
+    display: flex; 
+    justify-content: center; 
+    gap: 310px;
+    grid-row-gap: 125px;
+    color: #707070;
+    font-weight: bold;
+    font-family: Segoe UI;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.productinfo img {
+background-color: white;
+}
+
+.productitem {
+    text-align: center; 
+}
+
+.productitem a {
+    margin: 10px; 
+    background-color: white; 
+}
+
+
+.cartbutton {
+display: flex;
+justify-content: center;
+gap: 390px;
+}
+
+.cartbutton:hover {
+    transform: translateY(5px);
+}
+
+.cartbutton a {
+border: solid black 2px;
+border-radius: 50px;
+padding: 10px;
+background-color: black;
+color: #1AFF00;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+padding-right: 70px;
+padding-left: 70px;
+box-shadow: 3px 3px 3px;
+margin-bottom: 10px;
+text-decoration: none;
+}
+
+
+.Information {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    }
+
+    .Information:hover {
+        transform: translateY(5px);
+    }
+
+.Information a {
+    border: solid #707070 2px;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-right: 75px;
+    padding-left: 75px;
+    color: #707070;
+    text-decoration: none;
+}
+
+#blackkeyboard {
+    border: solid 2px;
+    padding: 35px;
+    color: #707070;
+    box-sizing: border-box;
+    width: 18rem;
+    height: 240px;
+    }
+    
+    #razerkeyboard {
+        border: solid 2px;
+        padding: 35px;
+        color: #707070;
+        box-sizing: border-box;
+        width: 18rem;
+        height: 240px;
+    }
+    
+    #tklkeyboard {
+        border: solid 2px;
+        padding: 35px;
+        color: #707070;
+        box-sizing: border-box;
+        width: 18rem;
+        height: 240px;
+    
+    }
+
+
+/* Home page content end */
+
+/* Contact page start */
+.contact {
+text-align: center;
+font-family: Segoe UI;
+font-weight: bold;
+margin-top: 5%;
+font-size: 40px;
+padding-bottom: 17%;
+}
+
+.about {
+font-size: 30px;
+padding-top: 2%;
+text-align: center;
+font-weight: normal;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+#about {
+margin-top: 15%;
+text-decoration: underline;
+}
+
+#logocontact {
+width: 20%;
+margin-top: 10%;
+margin-bottom: 5%;
+}
+
+/* Contact page end */
+
+/* Handlekurv side start */
+
+.productcart {
+display: flex;
+justify-content: center;
+margin-top: 5%;
+
+}
+
+.pictureofproduct {
+display: flex;
+flex-direction: column;
+width: 600px;
+justify-content: center;
+gap: 80px;
+}
+
+.pictureofproduct img {
+    border: solid 2px;
+    padding: 35px;
+    color: #707070;
+    box-sizing: border-box;
+}
+
+.productinfos {
+    display: flex;
+    flex-direction: row;
+    font-family: Segoe UI;
+    font-size: 30px;
+    color: #707070;
+    gap: 200px;
+    margin-top: 5%;
+font-weight: bold;
+justify-content: center;
+}
+
+#sum {
+    display: flex;
+    flex-direction: row;
+    font-family: Segoe UI;
+    font-size: 35px;
+    color: #000000;
+    gap: 200px;
+    margin-top: 10%;
+font-weight: bold;
+justify-content: center;
+}
+
+#paynow {
+    display: flex;
+    justify-content: center;
+font-size: 35px;
+border: solid black 2px;
+border-radius: 50px;
+padding: 10px;
+background-color: black;
+color: #1AFF00;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+box-shadow: 3px 3px 3px;
+text-decoration: none;
+margin-right: 40%;
+margin-left: 40%;
+}
+
+.betaling {
+display: flex;
+justify-content: center;
+}
+
+/* Handlekurv side end */
+
+/* Product Pages start */
+
+.productimageandinfo img {
+width: 35%;
+border:#707070 solid 2px;
+padding: 3%;
+box-sizing: border-box;
+}
+
+.productimageandinfo {
+margin-left: 10%;
+margin-top: 3%;
+display: flex;
+justify-content: center;
+gap: 150px;
+width: 90%;
+}
+
+.productimageandinfo p {
+font-family: Segoe UI;
+font-size: 25px;
+padding: 200px;
+color: #707070;
+}
+
+.productprice {
+    color: #707070;
+    font-size: 30px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    margin-right: 24%;
+}
+
+.cartproduct {
+display: flex;
+justify-content: center;
+margin-left: 49%;
+}
+
+.cartproduct a {
+    border: solid black 2px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: black;
+    color: #1AFF00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    padding-right: 70px;
+    padding-left: 70px;
+    box-shadow: 3px 3px 3px;
+    text-decoration: none;
+}
+
+/* Product Pages end */
+
+/* My orders start */
+
+.boxes {
+display: flex;
+justify-content: center;
+}
+
+.box {
+border: 2px solid;
+color: #707070;
+padding-left: 20%;
+padding-right: 20%;
+margin-top: 5%;
+font-family: Segoe UI;
+font-weight: bold;
+text-decoration: underline;
+}
+
+/* My orders end */
+
+/* My account start */
+.account {
+display: flex;
+justify-content: center;
+margin-top: 3%;
+color: #707070;
+}
+
+.accounttexts {
+font-size: 41px;
+font-family: Segoe UI;
+position: absolute;
+margin-right: 42%;
+}
+
+.accountbar {
+width: 30%;
+font-size: 41px;
+padding: 10px;
+}
+
+.LoginAndRegister {
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-top: 75px;
+}
+
+.LoginAndRegister a {
+text-align: center;
+font-size: 24px;
+font-family: Segoe UI;
+border: 2px solid;
+border-radius: 50px;
+padding: 20px;
+padding-left: 110px;
+padding-right: 110px;
+background-color: #000000;
+color: #1AFF00;
+}
+
+.LoginAndRegister input {
+    text-align: center;
+    font-size: 24px;
+    font-family: Segoe UI;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: #000000;
+    color: #1AFF00;
+    }
+    
+/* My account end */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    bottom: 0;
+    background: black;
+    color: white;
+    font-size: 30px;
+    font-family: Segoe UI;
+    font-weight: lighter;
+    margin-top: 10%;
+    gap: 5%;
+}
+
+footer img {
+width: 2%;
+position: absolute;
+}
+
+/* Media queries start */
+
+@media screen and (max-width: 450px) {
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+
+/* Navbar (Mobil) */
+.navbar {
+gap: 0px;
+}
+
+#navtext {
+font-size: 20px;
+}
+
+#icons {
+height: 40px;
+}
+
+#logo {
+height: 40px;
+}
+.search {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.searchbutton {
+width: 20%;
+margin-top: 13%;
+}
+
+.dropmenu {
+border-radius: 200px;
+background-color: transparent;
+border-color: transparent;
+    }
+
+    .searchbutton {
+        position: fixed;
+        }
+
+/* Navbar (Mobil) end */
+
+/* Titeler */
+
+.pagetitle {
+font-size: 15px;
+}
+
+.title {
+font-size: 29px;
+margin-bottom: 0px;
+}
+
+.titlekontakt {
+font-size: 22px;
+margin-right: 10%;
+margin-left: 10%;
+}
+
+.titleproducts {
+    justify-content: center;
+    font-size: 27px;
+    margin-right: 0%;
+    margin-top: 1%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Titeler end*/
+
+/* Kontakt */
+
+.contact {
+    margin-top: 5%;
+    font-size: 20px;
+    padding-bottom: 100%;
+    margin-top: 20%
+    }        
+        #logocontact {
+        width: 50%;
+        }
+
+        .about {
+            font-size: 20px;
+            }
+    /* Kontakt end */
+
+    /* Produkt sider */
+
+.productimageandinfo img {
+    width: 90%;
+    margin-top: 10%;
+    }
+    
+    .productimageandinfo {
+    margin-left: 10%;
+    margin-top: 3%;
+    gap: 50px;
+    flex-direction: column;
+    }
+    
+    .productimageandinfo p {
+    font-size: 20px;
+    padding: 20px;
+    margin-right: 50px;
+    }
+    
+    .productprice {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0%;
+    }
+    
+    .cartproduct {
+    margin-left: 0%;
+    }
+    
+    .cartproduct a {
+        font-size: 22px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+
+ /* Produkt sider end */
+
+    /* Hjemmeside */
+
+    .productinfo {
+        gap: 100px;
+        margin-top: 50px;
+        grid-row-gap: 75px;
+        
+    }
+
+    .Information a {
+   padding-left: 60px;
+   padding-right: 60px;
+    }
+
+    .cartbutton a {
+    padding: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+        }
+
+    /* Hjemmeside end */
+    
+
+/*Handlekurv side start*/
+.pictureofproduct {
+width: 270px;
+margin-top: 5%;
+gap: 25px;
+margin-left: 1%;
+}
+
+.productinfos {
+font-size: 20px;
+text-align: center;
+margin-left: 1%;
+}
+
+#sum {
+font-size: 30px;
+}
+
+#paynow {
+margin-left: 20%;
+margin-right: 20%;
+font-size: 30px;
+}
+
+.betaling {
+display: none;
+}
+
+    /*Handlekurv side end*/
+
+
+    /* My orders start */
+    .boxes {
+    margin-top: 5%;
+        }
+
+    .box {
+    padding-left: 3%;
+        }
+    /* My orders end */
+
+
+    /* My account start */
+
+        .account {
+        margin-top: 15%;
+        }
+
+        .accounttexts {
+        font-size: 25px;
+        }
+        
+        .accountbar {
+            width: 30%;
+            font-size: 20px;
+            padding: 10px;
+            padding-right: 10%;
+            margin-left: 27%;
+
+        }
+        
+
+        .Lagre {
+        margin-right: 14%;
+        }
+        
+        .Lagre p {
+            font-size: 20px;
+        }
+    /* My account end */
+
+
+    footer {
+        padding: 40px;
+        width: 80%;
+        margin-top: 30%;
+        font-size: 25px;
+    }
+
+    footer img {
+        width: 10%;
+        margin-left: 50px;
+        }
+    
+}
+
+/* Media queries end */

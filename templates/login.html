@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min konto</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<!-- Navbar start -->
+<body>
+
+    <div class="loading" id="loading">
+        <div class="loadinggear" id="loadinggear">
+        <img class src="/static/img/gears_spinner.svg" alt="gear spinner">
+        </div>
+           </div>
+
+ <div class="navbar">
+<a id="navtext" href="/">Hjem</a>
+<div class="searchfull">
+<button onclick="showBar()" class="search" type="submit">
+    <img id="icons" src="/static/img/search.png" alt="search icon">
+  </button>
+  <input class="searchbutton"
+  placeholder="Søk..."/>
+</div>
+<a href="/"><img id="logo" src="/static/img/logofornettside.svg" alt="logo"></a>
+<div class="menu">
+<button class="dropmenu"><img id="icons" src="/static/img/menu.png" alt="menu"></button>
+<div class="dropmenubuttons">
+<a href="handlekurv.html">Min handlekurv</a>
+<a href="/login">Min konto</a>
+<a href="mineordre.html">Mine bestillinger</a>
+</div>
+</div>
+<a id="navtext" href="kontakt.html">Kontakt</a>
+ </div>
+
+<!-- Navbar end -->
+
+<!-- Titles start -->
+
+<div class="pagetitle">
+Login
+</div>
+
+<div class="title">
+Log in
+</div>
+    
+<!-- Titles end -->
+
+
+<body>
+<!-- Content start -->
+
+<form action="{{ url_for('login') }}" method="post">
+
+<div class="account">
+    <div class="accounttexts">E-post:</div>
+    <input type="text" name="email" class="accountbar" placeholder="..." id="email" required>
+    </div>
+
+    <div class="account">
+        <div class="accounttexts">Passord:</div>
+        <input type="password" name="password" class="accountbar"  placeholder="..." id="password" required>
+        </div>
+
+<div class="msg">{{ msg }}</div>
+
+
+<div class="LoginAndRegister">
+<a href="/login/register">Register</a>  <!-- Made by Frendon -->
+<input id="login" type="submit" value="Login">
+</div>
+
+</form>
+
+<!-- Content end -->
+</body>
+
+<footer>
+    Shokjøp © <a target="_blank" href="https://github.com/freyzsaycon/Shokjop.git"><img src="/static/img/githublogo.png" alt="github logo"></a>
+</footer>
+
+<script src="/static/script.js"></script>
+</html>
