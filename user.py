@@ -100,10 +100,6 @@ def home():
         return render_template ('index_loggedin.html', name=session['name'])
     return redirect(url_for('login'))
 
-if __name__ == '__main__':
-    app.run(debug=True)   
-
-
 
 @app.route('/login/profile')
 def profile():
@@ -113,3 +109,7 @@ def profile():
         account = cursor.fetchone()
         return render_template('profile.html', account=account)
     return redirect(url_for('login'))
+
+
+if __name__ == '__main__':
+    app.run(debug=True)   

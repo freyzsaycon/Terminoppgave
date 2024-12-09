@@ -1,24 +1,43 @@
 <html>
 
-<!-- Titles start -->
+
 {% extends 'layout_loggedin.html' %}
 
-{% block title %}Profile{% endblock %}  
+{% block title %}Konto{% endblock %}  
 
 {% block content %}
 
 <body>
     
+<!-- Titles start -->
 
 <div class="pagetitle">
-Profile
+Konto
 </div>
 
 <div class="title">
-Your profile
+Din konto
 </div>
-      
+    
 <!-- Titles end -->
+<div>
+    <p>Her er konto detaljene dine</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['name'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>******</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+ 
 
 <footer>
     Shokjøp © <a target="_blank" href="https://github.com/freyzsaycon/Shokjop.git"><img src="/static/img/githublogo.png" alt="github logo"></a>
