@@ -1,2 +1,2 @@
 # Shokjøp
-En gaming nettbutikk med salg av elektronisk utstyr. Som har fungerende login/register system, handlekurv/bestillinger side.
+En gaming nettbutikk med salg av elektronisk utstyr. Er du en entusiastisk gamer og trenger ny gaming tastatur/kontroller? Kjøp hos Shokjøp nå!
